@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Оформлення замовлення</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="order-container">
+
+    <h2>Оформление заказа</h2>
+
+    <form action="https://formspree.io/f/xjgewgjq" method="POST">
+    <div class="form-group">
+        <label>Имя и фамилия</label>
+        <input 
+            type="text" 
+            name="ПІБ" 
+            placeholder="ПІБ"
+            required>
+    </div>
+
+    <div class="form-group">
+        <label>Номер телефона</label>
+        <input 
+            type="tel" 
+            name="Номер телефона" 
+            placeholder="+380 ХХ ХХХ ХХ ХХ"
+            required>
+    </div>
+
+    <div class="form-group">
+        <label>Город доставки</label>
+        <input 
+            type="text" 
+            name="Місто доставки" 
+            placeholder="Місто доставки"
+            required>
+    </div>
+
+    <div class="form-group">
+        <label>Отделение Новой Почты</label>
+        <input 
+            type="text" 
+            name="Відділення НП / Укрпошта" 
+            placeholder="Відділення НП / Укрпошта"
+            required>
+    </div>
+    <div class="form-group">
+        <label>Количество книг</label>
+        <input
+            placeholder="Кількість книг" 
+            type="number" 
+            name="Кількість" 
+            min="1" 
+            value="Кількість:"
+            required>
+    </div>
+    <button type="submit" class="submit-btn">Відправити заявку</button>
+    <p class="note">
+        После отправки заявки с вами свяжется продавец для подтверждения заказа и уточнения оплаты.
+    </p>
+    <p class="privacy">
+        Нажимая кнопку, вы соглашаетесь на обработку персональных данных.
+    </p>
+</form>
+</div>
+</body>
+</html>
+
